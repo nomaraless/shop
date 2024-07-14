@@ -20,7 +20,7 @@ public class ShopController {
         return basketService.add(id);
     }
 
-    @GetMapping
+    @GetMapping("/get")
     public List<Integer> get() {
         return basketService.getBasket();
     }

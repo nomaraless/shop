@@ -23,6 +23,6 @@ public class BasketServiceImpl implements BasketService {
 
     @Override
     public List<Integer> getBasket() {
-        return Collections.unmodifiableList(basketArray);
+        return (basketArray);
     }
 }
