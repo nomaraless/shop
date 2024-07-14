@@ -15,9 +15,10 @@ public class BasketServiceImpl implements BasketService {
     }
 
     @Override
-    public void add(List<Integer> id) {
+    public List<Integer> add(List<Integer> id) {
         for (Integer id1 : id)
             basketArray.add(id1);
+        return ( basketArray);
     }
 
     @Override

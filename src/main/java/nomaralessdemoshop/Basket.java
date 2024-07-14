@@ -21,4 +21,10 @@ public class Basket {
         this.id = id;
     }
 
+    @Override
+    public String toString() {
+        return "Basket{" +
+                "id=" + id +
+                '}';
+    }
 }

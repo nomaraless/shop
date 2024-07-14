@@ -16,7 +16,8 @@ public class ShopController {
     private BasketService basketService;
 
     @GetMapping("/add")
-    public void add(@RequestParam(value = "id", required = false) List<Integer> id) {
+    public List<Integer> add(@RequestParam(value = "id", required = false) List<Integer> id) {
+        return basketService.add(id);
     }
 
     @GetMapping
